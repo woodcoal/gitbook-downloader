@@ -17,7 +17,7 @@ const { escapeRegExp, ensureDirectory, writeFile } = require('../utils');
  * @param {Object} options.spinner ora spinner 实例
  */
 async function downloadGitbook(url, options) {
-	const { outputDir, downloadImages = true, auth = null, spinner } = options;
+	const { all = false, outputDir, downloadImages = true, auth = null, spinner } = options;
 
 	// 确保输出目录存在
 	await ensureDirectory(outputDir);
@@ -68,7 +68,7 @@ async function downloadGitbook(url, options) {
 		const urlObj = new URL(url);
 		const hasPath = urlObj.pathname !== '/' && urlObj.pathname !== '';
 
-		if (hasPath) {
+		if (hasPath && !all) {
 			// 如果包含具体路径，只下载当前页面
 			spinner.text = '正在下载单个页面...';
 			const content = await extractPageContent(page);

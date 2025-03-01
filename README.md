@@ -40,10 +40,11 @@ node src/index https://internal.company.com/docs \
 
 ### 参数说明
 
-| 短参数 | 长参数     | 数据类型 | 默认值   | 说明                      |
-| ------ | ---------- | -------- | -------- | ------------------------- |
-| -o     | --output   | string   | ./output | 支持绝对/相对路径         |
-| -i     | --images   | boolean  | true     | 使用`--no-images`禁用下载 |
-| -a     | --auth     | boolean  | false    | 启用 HTTP Basic 认证      |
-| -u     | --username | string   | -        | 需与`-a`联用              |
-| -p     | --password | string   | -        | 建议通过环境变量传递      |
+| 短参数 | 长参数     | 数据类型 | 默认值   | 说明                           |
+| ------ | ---------- | -------- | -------- | ------------------------------ |
+| -a     | --all      | string   | false    | 对于包含路径的地址是否全站下载 |
+| -o     | --output   | string   | ./output | 支持绝对/相对路径              |
+| -i     | --images   | boolean  | true     | 使用`--no-images`禁用下载      |
+| -a     | --auth     | boolean  | false    | 启用 HTTP Basic 认证           |
+| -u     | --username | string   | -        | 需与`-a`联用                   |
+| -p     | --password | string   | -        | 建议通过环境变量传递           |

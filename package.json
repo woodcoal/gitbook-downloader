@@ -1,6 +1,6 @@
 {
 	"name": "gitbook-downloader",
-	"version": "1.25.0301",
+	"version": "1.25.0302",
 	"description": "GitBook Downloader 是一款基于 Node.js 的自动化文档抓取工具，专为 GitBook 托管平台文档下载设计，支持**全站内容批量下载**（含嵌套目录结构、Markdown 排版、图片及附件资源）。",
 	"author": "木炭",
 	"homepage": "https://github.com/woodcoal/gitbook-downloader",
