@@ -41,13 +41,13 @@ node src/index https://internal.company.com/docs \
 ### Parameter Description
 
 | Short Param | Long Param | Data Type | Default  | Description                                                         |
-| ----------- | ---------- | --------- | -------- | ------------------------------------------------------------------- | -------------------------------- |
+| ----------- | ---------- | --------- | -------- | ------------------------------------------------------------------- | 
 | -a          | --all      | string    | false    | Whether to download the entire site for addresses containing paths. |
 | -o          | --output   | string    | ./output | Supports absolute/relative paths                                    |
 | -i          | --images   | boolean   | true     | Use `--no-images` to disable                                        |
 | -a          | --auth     | boolean   | false    | Enable HTTP Basic authentication                                    |
 | -u          | --username | string    | -        | Must be used with `-a`                                              |
-| -p          | --password | string    | -        | Recommended to pass via environment variables                       | approach to document extraction. |
+| -p          | --password | string    | -        | Recommended to pass via environment variables approach to document extraction. |
 
 ---
 
